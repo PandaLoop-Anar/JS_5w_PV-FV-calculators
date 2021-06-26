@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./calculator.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form class="mt-5" id="form1">
+            <h2>Calculate Future value of a Lump Sum</h2>
+            <h5>მომავალი ღირებულების გამოსათვლელი კალკულატორი</h5>
+            <div class="form-group">
+                <label for="num1">Present value (PV)</label>
+                <input type="text" class="form-control" id="num1" input required>
+                <small id="Help" class="form-text text-muted">მიმდინარე ღირებულება</small>
+            </div>
+            <div class="form-group">
+                <label for="num2">Interst rate (i) %</label>
+                <input type="text" class="form-control" id="num2" input required>
+                <small id="Help" class="form-text text-muted">საპროცენტო განაკვეთი</small>
+            </div>
+            <div class="form-group">
+                <label for="num3">Number of compounding periods (n)</label>
+                <input type="text" class="form-control" id="num3" input required>
+                <small id="Help" class="form-text text-muted">პერიოდი</small>
+            </div>
+            <input value="submit" type="button" class="btn btn-primary" id="btn" name="" id="btn">
+            <br>
+            <p>Answer:</p>
+            <h5 answer></h5>
+            <small>პასუხი</small>
+
+        </form> 
+        <form class="mt-5" id="form2">
+            <h2>Calculate Present value of a Lump Sum</h2>
+            <h5>მიმდინარე ღირებულების გამოსათვლელი კალკულატორი</h5>
+            <div class="form-group">
+                <label for="num11">Future value (FV)</label>
+                <input type="text" class="form-control" id="num11" input required>
+                <small id="Help" class="form-text text-muted">მომავალი ღირებულება</small>
+            </div>
+            <div class="form-group">
+                <label for="num12">Interst rate (i) %</label>
+                <input type="text" class="form-control" id="num12" input required>
+                <small id="Help" class="form-text text-muted">საპროცენტო განაკვეთი</small>
+            </div>
+            <div class="form-group">
+                <label for="num13">Number of compounding periods (n)</label>
+                <input type="text" class="form-control" id="num13" input required>
+                <small id="Help" class="form-text text-muted">პერიოდი</small>
+            </div>
+            <input value="submit" type="button" class="btn btn-success" id="btn1" name="" id="btn">
+            <br>
+            <p>Answer:</p>
+            <h5 answer1></h5>
+            <small>პასუხი</small>
+
+        </form>     
+    </div>
+</body>
+</html>
